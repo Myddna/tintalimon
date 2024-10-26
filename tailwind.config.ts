@@ -12,6 +12,9 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      aspectRatio: {
+        'meishi': '1.65'
+      }
     },
   },
   plugins: [],
