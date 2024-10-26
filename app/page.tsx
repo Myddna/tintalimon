@@ -5,14 +5,14 @@ export default function Home() {
   const cardWidth = "w-80 md:w-96"
   const commonCardStyle = `shadow-md rounded-lg absolute aspect-meishi ${cardWidth} ` +
     "t-0 r-0 b-0 l-0 p-8 flex flex-col items-center justify-center " +
-    "bg-amber-400 text-white";
+    "bg-amber-400";
   return (
     <div className={styles.homeWrapper}>
       <main className={styles.main}>
         {/* Flipping group */}
         <div className={`${styles.card__content} relative ${cardWidth} aspect-meishi text-center transition-transform duration-1000`}>
           {/* Front */}
-          <div className={`${styles.card__front} ${commonCardStyle} `}>
+          <div className={`${styles.card__front} ${commonCardStyle} text-white`}>
             <h1 className="text-center text-6xl">Tinta<br />Limón</h1>
           </div>
 
