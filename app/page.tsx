@@ -3,7 +3,7 @@ import styles from './mainPage.module.css';
 
 export default function Home() {
   const cardWidth = "w-80 md:w-96"
-  const commonCardStyle = `shadow-md rounded-lg absolute aspect-meishi ${cardWidth}` +
+  const commonCardStyle = `shadow-md rounded-lg absolute aspect-meishi ${cardWidth} ` +
     "t-0 r-0 b-0 l-0 p-8 flex flex-col items-center justify-center " +
     "bg-amber-400 text-white";
   return (
