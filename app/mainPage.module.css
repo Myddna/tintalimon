@@ -11,9 +11,20 @@
   justify-content: center;
 }
 
-.card__content {transform-style: preserve-3d;}
-.card__content:hover {transform: rotateY(.5turn);}
+.card__content {
+  transform-style: preserve-3d;
+  cursor: default;
+}
+
+.card__content:hover {
+  transform: rotateY(.5turn);
+}
 
 .card__front,
-.card__back { backface-visibility: hidden;}
-.card__back{ transform: rotateY(.5turn);}
+.card__back {
+  backface-visibility: hidden;
+}
+
+.card__back {
+  transform: rotateY(.5turn);
+}
