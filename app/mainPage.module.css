@@ -28,3 +28,9 @@
 .card__back {
   transform: rotateY(.5turn);
 }
+
+.card__logo {
+  width: auto;
+  height: 100%;
+  filter: drop-shadow(4px 2px 0px rgb(0 0 0 / 0.3));
+}

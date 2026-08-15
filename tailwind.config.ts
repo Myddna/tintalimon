@@ -11,6 +11,15 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        lemon: {
+          400: '#ffdd00'
+        },
+        cinnamon: {
+          400: '#eea78c'
+        },
+        paleblue: {
+          400: '#a7d4e4'
+        }
       },
       aspectRatio: {
         'meishi': '1.65'
