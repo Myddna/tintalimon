@@ -1,39 +1,64 @@
-import { FaInstagram } from "react-icons/fa6";
+import { FaInstagram } from 'react-icons/fa6';
 import styles from './mainPage.module.css';
+import { SiKofi } from 'react-icons/si';
 
 export default function Home() {
-  const cardWidth = "w-80 md:w-96"
-  const commonCardStyle = `shadow-md rounded-lg absolute aspect-meishi ${cardWidth} ` +
-    "t-0 r-0 b-0 l-0 p-8 flex flex-col items-center justify-center " +
-    "bg-amber-400";
+  const cardWidth = 'w-80 md:w-96';
+  const commonCardStyle =
+    `shadow-md rounded-lg absolute aspect-meishi ${cardWidth} ` +
+    't-0 r-0 b-0 l-0 p-8 flex flex-col items-center justify-center ' +
+    'bg-amber-400';
   return (
     <div className={styles.homeWrapper}>
       <main className={styles.main}>
         {/* Flipping group */}
-        <div className={`${styles.card__content} relative ${cardWidth} aspect-meishi text-center transition-transform duration-1000`}>
+        <div
+          className={`${styles.card__content} relative ${cardWidth} aspect-meishi text-center transition-transform duration-1000`}
+        >
           {/* Front */}
-          <div className={`${styles.card__front} ${commonCardStyle} text-white`}>
-            <h1 className="text-center text-6xl">Tinta<br />Limón</h1>
+          <div
+            className={`${styles.card__front} ${commonCardStyle} text-white`}
+          >
+            <h1 className="text-center text-6xl">
+              Tinta
+              <br />
+              Limón
+            </h1>
           </div>
 
           {/* back */}
-          <div className={`${styles.card__back} ${commonCardStyle} text-black text-lg`}>
-            <p className="mb-2"><strong>Relief printmaking</strong></p>
+          <div
+            className={`${styles.card__back} ${commonCardStyle} text-black text-lg`}
+          >
+            <p className="mb-2">
+              <strong>Relief printmaking</strong>
+            </p>
             <ul>
               <li>Mokuhanga (木版画)</li>
               <li>Linocut</li>
             </ul>
           </div>
         </div>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4 pt-3 text-lg"
-          href="https://instagram.com/tinta.limon"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaInstagram />
-          Instagram
-        </a>
+        <div className="flex items-center gap-3">
+          <a
+            className="flex items-center gap-1 hover:underline hover:underline-offset-4 hover:text-orange-500 pt-3 text-sm"
+            href="https://instagram.com/tinta.limon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+            Instagram
+          </a>
+          <a
+            className="flex items-center gap-1 hover:underline hover:underline-offset-4 hover:text-orange-500 pt-3 text-sm"
+            href="https://ko-fi.com/tintalimon/shop"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SiKofi />
+            Buy my prints
+          </a>
+        </div>
       </main>
     </div>
   );
