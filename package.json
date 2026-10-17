@@ -7,22 +7,24 @@
     "build": "next build",
     "build-standalone": "rm -rf .next && next build && cp -r public .next/standalone/ && cp -r .next/static .next/standalone/.next/",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pack": "pnpm run build-standalone && tar -cvzf tintalimon.tar.gz .next ecosystem.config.js"
   },
   "dependencies": {
-    "next": "^15.0.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-icons": "^5.3.0"
+    "next": "^16.4.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-icons": "^5.7.0",
+    "tailwindscss": "^0.3.0"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "^15.0.1",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^16.4.2",
+    "postcss": "^8.5.30",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^6.0.3"
   }
 }
