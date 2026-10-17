@@ -1,7 +1,8 @@
 import { FaInstagram } from 'react-icons/fa6';
 import styles from './mainPage.module.css';
-import { SiKofi } from 'react-icons/si';
+import { SiEventstore, SiKofi } from 'react-icons/si';
 import Image from 'next/image';
+import { BiSolidShoppingBag } from 'react-icons/bi';
 
 export default function Home() {
   const cardWidth = 'w-80 md:w-96';
@@ -45,9 +46,9 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex flex-col items-center gap-2 mt-3">
           <a
-            className="flex items-center gap-1 hover:underline hover:underline-offset-4 hover:text-cinnamon-400 pt-3 text-sm"
+            className="flex items-center gap-1 hover:underline hover:underline-offset-4 hover:text-cinnamon-400 text-sm"
             href="https://instagram.com/tinta.limon"
             target="_blank"
             rel="noopener noreferrer"
@@ -56,13 +57,13 @@ export default function Home() {
             Instagram
           </a>
           <a
-            className="flex items-center gap-1 hover:underline hover:underline-offset-4 hover:text-cinnamon-400 pt-3 text-sm"
-            href="https://ko-fi.com/tintalimon/shop"
+            className="flex items-center gap-1 hover:underline hover:underline-offset-4 hover:text-cinnamon-400 text-sm"
+            href="https://figbilbao.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <SiKofi />
-            Buy my prints
+            <BiSolidShoppingBag />
+            Buy my prints at FIG Bilbao 2026 (26 - 29 November)
           </a>
         </div>
         <Image className={'fixed bottom-4 right-4'} src={'/logo-sello-rojo.svg'} alt='Tinta Limón Seal' width={51} height={76} />
