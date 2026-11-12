@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  /* Configuración del Modo Oscuro (reemplaza a darkMode: "class") */
+  --variant-dark: (&:where(.dark, .dark *));
+
+  /* Colores personalizados */
+  --color-accent-1: #FAFAFA;
+  --color-accent-2: #EAEAEA;
+  --color-accent-7: #333;
+  --color-success: #0070f3;
+  --color-cyan: #79FFE1;
+  --color-lemon-400: #ffdd00;
+  --color-cinnamon-400: #eea78c;
+  --color-paleblue-400: #a7d4e4;
+  
+  /* Aspect ratio */
+  --aspect-meishi: 1.65;
+
+  /* Espaciado (unidades de espaciado añadidas/modificadas) */
+  --spacing-28: 7rem;
+
+  /* Letter Spacing (Espaciado de letras) */
+  --tracking-tighter: -.04em;
+
+  /* Tamaños de fuente */
+  --text-5xl: 2.5rem;
+  --text-6xl: 2.75rem;
+  --text-7xl: 4.5rem;
+  --text-8xl: 6.25rem;
+
+  /* Sombras (Box Shadow) */
+  --shadow-sm: 0 5px 10px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.12);
+
+  /* Fondos con degradados personalizados */
+  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+  --background-image-gradient-conic: conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops));
+}
